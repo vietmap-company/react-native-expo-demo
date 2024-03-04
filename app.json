@@ -15,13 +15,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "vn.vietmap.vietmapexpodemo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      
+      "package": "com.thanhdang98.vietmap_expo_demo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
