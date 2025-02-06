@@ -1,5 +1,20 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion":24,
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          },
+          "ios": {
+            "deploymentTarget": "13.4"
+          }
+        }
+      ]
+    ],
     "name": "vietmap_expo_demo",
     "slug": "vietmap_expo_demo",
     "version": "1.0.0",
@@ -23,7 +38,6 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "minSDKVersion": "24",
       
       "package": "com.thanhdang98.vietmap_expo_demo"
     },

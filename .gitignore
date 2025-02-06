@@ -35,3 +35,8 @@ yarn-error.*
 *.tsbuildinfo
 /android/
 /ios/
+
+vietmap_config.tsx
+/node_modules/
+/.expo/
+/.vscode/
