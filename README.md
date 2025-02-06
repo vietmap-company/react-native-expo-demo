@@ -44,36 +44,8 @@ You can add an object as a child of an ios object in the `app.json` like so:
     ...
 }
 ```
-## Show the map
-Add the below code to `package.json` file
-```json
-    "@vietmap/vietmap-gl-react-native": "^0.0.6",
-    "@react-navigation/native": "5.7.3",
-    "@react-navigation/stack": "5.9.0",
-    "@types/geojson": "^7946.0.14",
-    "react-native-elements": "3.4.3",
-    "react-native-gesture-handler": "1.10.3",
-    "react-native-safe-area-context": "3.3.2",
-    "react-native-select-dropdown": "3.4.0",
-    "react-native-vector-icons": "^10.0.3"
-```
-Run `npm i` or `yarn install` to install the packages
+## Upgrade your minSdkVersion to 24
+Navigate to android/app/build.gradle and change the minSdkVersion to 24
 
-Add [ShowMap.js](./ShowMap.js) and [Navigation.js](./Navigation.js) files to the root project 
-
-Add the below code to `App.js/App.tsx` file
-```js
-Vietmap.setApiKey(null)
-export default function App() {
-  return (
-    <SafeAreaView style={{flex:1}}>
-      <Navigation />
-    </SafeAreaView>
-  );
-}
-```
-`Vietmap.setApiKey(null)` must be called when the app initial.
-
-Run the project
 
 For more documentation, follow guide from [this repository](https://github.com/vietmap-company/vietmap-gl-react-native.git)
